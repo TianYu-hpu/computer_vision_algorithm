@@ -27,7 +27,7 @@ seg = copy.deepcopy(bw)
     CHAIN_APPROX_SIMPLE:压缩水平方向，垂直方向，对角线方向的元素，只保留该方向的重点坐标，例如一个矩形轮廓秩序四个点来保存轮廓信息
     CHIAN_APPROX_TC89_L1,CV_CHAIN_TC89_KCOS使用tech-Chinl chain近似算法
 '''
-contours, hierarchy = cv2.findContours(seg, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+bin, contours, hierarchy = cv2.findContours(seg, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 count = 0
 for i in range(len(contours), 0, -1):
     c = contours[i - 1]
