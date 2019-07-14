@@ -3,7 +3,8 @@
 
 import cv2
 import copy
-file_full_path = "/home/tianyu/software/IdeaProject/computer_vision_algorithm/rice.jpg"
+
+file_full_path = "/home/tianyu/software/IDEAProjects/computer_vision_algorithm/rice.jpg"
 image = cv2.imread(file_full_path)
 #将彩色图像转换成灰度图像
 grayImage = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
